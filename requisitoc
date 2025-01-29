@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+     
+     int idade = 21;
+     char resposta[50], escolaridade[10], ingles[10], experiencia[10];
+
+    printf("PREENCHIMENTO DE REQUISÍTOS\n");
+
+     printf("Digite sua idade: ");
+     scanf("%d" ,&idade);
+
+     printf("tem conhecimento em pacote office básico? (sim/nao): ");
+     scanf("%s" ,&resposta); 
+
+     printf("Qual seu nível de escolaridade? (Fundamental/ Médio/ Superior): ");
+     scanf("%s",&escolaridade);
+
+     printf("Tem alguma experiência? (Sim/Não): ");
+     scanf("%s", experiencia);
+
+     printf("Tem conhecimento em inglês? (Sim/Não): ");
+     scanf("%s",ingles);
+
+     if(idade >= 21 && resposta == "Sim" && escolaridade =="Médio" && experiencia =="Sim" && ingles =="Sim" ) {
+        printf("Parabéns! Você preenche todos os requisítos.");
+        printf("Você está contratado!");
+     } else {
+        printf("Infelizmente, você não atende a todos os requisítos.");
+    
+     }
+     
+return 0;
+
+}
